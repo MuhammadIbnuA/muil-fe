@@ -17,7 +17,7 @@ const LoginForm = () => {
     };
 
     try {
-      const response = await axios.post("https://muil-be.vercel.app/menu", loginData);
+      const response = await axios.post("https://muil-be.vercel.app/login", loginData);
       const { token } = response.data;
 
       // Store the token in local storage
